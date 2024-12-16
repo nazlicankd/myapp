@@ -1,0 +1,309 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 40s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.geneldiv {
+  background-color: red;
+  color: black;
+  height: 400px;
+  width: 400px;
+  display: flex;
+}
+
+.raceboard {
+  background-color: grey;
+  color: black;
+  height: 400px;
+  width: 400px;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap; /* İçindeki öğeleri satırlara saracak */
+}
+
+.racereinfo1 {
+  width: 40%; /* Küçük karenin genişliği */
+  height: 40%; /* Küçük karenin yüksekliği */
+  background-color: lightblue; /* Küçük karenin arka plan rengi */
+  margin: 2.5%; /* Küçük karelerin arasındaki boşluk */
+  display: flex;
+  justify-content: center; /* İçeriği yatayda ortalamak */
+  align-items: center; /* İçeriği dikeyde ortalamak */
+  font-size: 14px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı tipi kalın */
+  flex-direction: column;
+}
+.racewinner {
+  width: 90%; /* Dikdörtgenin genişliği */
+  height: 25px; /* Dikdörtgenin yüksekliği */
+  background-color: lightcoral; /* Dikdörtgenin arka plan rengi */
+  margin: 10px auto; /* Yatayda ortalamak için auto margin */
+  display: flex;
+  justify-content: center; /* İçeriği yatayda ortalamak */
+  align-items: center; /* İçeriği dikeyde ortalamak */
+  font-size: 20px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı tipi kalın */
+}
+
+.examresultboard {
+  background-color: grey;
+  height: 400px;
+  width: 400px;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap; /* İçindeki öğeleri satırlara saracak */
+}
+
+.studentsdegree {
+  width: 99%; /* Küçük karenin genişliği */
+  height: 10%; /* Küçük karenin yüksekliği */
+  background-color: lightblue; /* Küçük karenin arka plan rengi */
+  margin: 1%; /* Küçük karelerin arasındaki boşluk */
+  border-color: black;
+  border: solid;
+  display: flex;
+  font-size: 14px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı tipi kalın */
+  flex-direction: column;
+}
+
+.background {
+  position: fixed; /* Sabit konumlandırma */
+  top: 0; /* Üstten sıfır mesafe */
+  left: 0; /* Soldan sıfır mesafe */
+  width: 100vw; /* Ekranın tam genişliği */
+  height: 100vh; /* Ekranın tam yüksekliği */
+  background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+  z-index: 9999; /* elementin diger ogelerinin Üstte görünmesi için yüksek z-index */
+  display: flex;
+  flex-wrap: wrap; /* İçindeki öğeleri satırlara saracak */
+  justify-content: center; /* İçeriği yatayda ortalamak */
+  align-items: center; /* İçeriği dikeyde ortalamak */
+}
+
+.doctorlist {
+  background-color: white;
+  height: 900px;
+  width: 1000px;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap; /* İçindeki öğeleri satırlara saracak */
+}
+
+.doctors {
+  background-color: white;
+
+  flex: 1 1 calc(33.33% - 20px);
+  height: 10%; /* Küçük karenin yüksekliği */
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap; /* İçindeki öğeleri satırlara saracak */
+  font-size: 14px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı tipi kalın */
+  flex-direction: column;
+}
+.patientslist {
+  background-color: white;
+  flex: 1 1 calc(33.33% - 20px);
+  height: 88%; /* Küçük karenin yüksekliği */
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap; /* İçindeki öğeleri satırlara saracak */
+  font-size: 14px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı tipi kalın */
+  justify-content: center; /* İçeriği yatayda ortalamak */
+  align-items: center; /* İçeriği dikeyde ortalamak */
+}
+.patients {
+  background-color: white;
+  width: 90%; /* Küçük karenin genişliği */
+  height: 10%; /* Küçük karenin yüksekliği */
+  border: solid;
+  border-width: 3px;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap; /* İçindeki öğeleri satırlara saracak */
+  font-size: 10px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı tipi kalın */
+  flex-direction: column;
+}
+.introduceYourselfBG {
+  position: fixed; /* Sabit konumlandırma */
+  top: 0; /* Üstten sıfır mesafe */
+  left: 0; /* Soldan sıfır mesafe */
+  width: 100vw; /* Ekranın tam genişliği */
+  height: 100vh; /* Ekranın tam yüksekliği */
+  background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+  z-index: 9999; /* elementin diger ogelerinin Üstte görünmesi için yüksek z-index */
+  display: flex;
+  flex-wrap: wrap; /* İçindeki öğeleri satırlara saracak */
+  justify-content: center; /* İçeriği yatayda ortalamak */
+  align-items: center; /* İçeriği dikeyde ortalamak */
+  flex-direction: column;
+}
+.IntroduceYourselfD {
+  background-color: white;
+  height: 100px;
+  width: 280px;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+  font-size: 14px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı tipi kalın */
+}
+
+.introduceYourself {
+  height: 200px;
+  width: 200px;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.clear {
+  height: 200px;
+  width: 80px;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hasta-style {
+  display: flex;
+}
+
+.table-style th {
+  padding: 20px;
+  border: 1px solid gray;
+}
+
+.table-style td {
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.fruitbackground {
+  position: fixed; /* Sabit konumlandırma */
+  top: 0; /* Üstten sıfır mesafe */
+  left: 0; /* Soldan sıfır mesafe */
+  width: 100vw; /* Ekranın tam genişliği */
+  height: 100vh; /* Ekranın tam yüksekliği */
+  background-color: blueviolet; /* Yarı saydam siyah arka plan */
+  z-index: 9999; /* elementin diger ogelerinin Üstte görünmesi için yüksek z-index */
+  display: flex;
+  /* flex-wrap: wrap; İçindeki öğeleri satırlara saracak */
+  /* justify-content: center; İçeriği yatayda ortalamak */
+  /* align-items: center; İçeriği dikeyde ortalamak */
+}
+
+.fruit-stock {
+  margin: 100px;
+  top: 0; /* Üstten sıfır mesafe */
+  left: 0; /* Soldan sıfır mesafe */
+}
+
+.fruit-buttons {
+  height: 50px;
+  width: 200px;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 2s;
+}
+.fruit-buttons:hover {
+  transform: scale(1.2);
+  background-color: blue;
+}
+.fruit-text {
+  background-color: white;
+  height: 50px;
+  width: 200px;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+  font-size: 14px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı tipi kalın */
+}
+
+.fruit-style {
+  display: flex;
+}
+
+.fruit-table-style th {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.fruit-table-style td {
+  padding: 20px;
+  border: 1px solid black;
+}
